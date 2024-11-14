@@ -43586,6 +43586,10 @@ paths:
               \   }\n  }\n}"
           step: there is a valid "historical_job" in the system
       x-menu-order: 19
+      x-permission:
+        operator: OR
+        permissions:
+        - security_monitoring_rules_write
       x-undo:
         type: idempotent
       x-unstable: '**Note**: This endpoint is in beta and may be subject to changes.
@@ -43623,6 +43627,10 @@ paths:
       - Security Monitoring
       x-codegen-request-body-name: body
       x-menu-order: 24
+      x-permission:
+        operator: OR
+        permissions:
+        - security_monitoring_signals_write
       x-undo:
         type: idempotent
       x-unstable: '**Note**: This endpoint is in beta and may be subject to changes.
@@ -43690,6 +43698,10 @@ paths:
       tags:
       - Security Monitoring
       x-menu-order: 21
+      x-permission:
+        operator: OR
+        permissions:
+        - security_monitoring_rules_read
       x-undo:
         type: safe
       x-unstable: '**Note**: This endpoint is in beta and may be subject to changes.
@@ -43724,6 +43736,10 @@ paths:
       tags:
       - Security Monitoring
       x-menu-order: 22
+      x-permission:
+        operator: OR
+        permissions:
+        - security_monitoring_rules_write
       x-undo:
         type: idempotent
       x-unstable: '**Note**: This endpoint is in beta and may be subject to changes.
